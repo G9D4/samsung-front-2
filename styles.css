@@ -91,6 +91,76 @@ input {
     font-size: 32px !important;
 }
 
+/* HEADER PUBLICIDAD */
+
+.main-header__carousel,
+.main-header__item-slider {
+    width: 100%;
+    height: 32px;
+}
+
+.main-header__carousel {
+    overflow: hidden;
+    background-color: #2089FF;
+}
+
+.main-header__item-slider {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+@keyframes slide {
+    0% {
+        bottom: 0;
+    }
+
+    24% {
+        bottom: 0;
+    }
+
+    25% {
+        bottom: 100%;
+    }
+
+    49% {
+        bottom: 100%;
+    }
+
+    50% {
+        bottom: 200%;
+    }
+
+    74% {
+        bottom: 200%;
+    }
+
+    75% {
+        bottom: 300%;
+    }
+
+    99% {
+        bottom: 300%;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.main-header__slider {
+    position: relative;
+    bottom: 0;
+    animation: slide 12s infinite;
+}
+
+.main-header__slider:hover {
+    animation-play-state: paused;
+}
+
 /* CARDS COMPRA */
 
 .cards-info-shop {
