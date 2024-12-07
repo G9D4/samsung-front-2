@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarritoSinProductos</title>
+</head>
+<body>
+    <header>
+        <div class="main-header__carousel">
+            <div class="main-header__slider">
+                <div class="main-header__item-slider">Compara hasta en 36 cuotas a 0% de interés con BAC</div>
+                <div class="main-header__item-slider">Descubre los nuevos Galaxy Fold6 | Z Flip6</div>
+                <div class="main-header__item-slider">Compra ahora con ENVÍO GRATIS entre 24 y 72h</div>
+                <div class="main-header__item-slider">Proyecto grupo 4</div>
+            </div>
+        </div>
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list ">
+                <li class="main-header_item_logo box-center_flex">
+                    <a href="/">
+                        <div class="logo-container">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small_2x/samsung-logo-on-transparent-background-free-vector.jpg"
+                                alt="Samsung Logo">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-header__item-list ">
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/mobile">
+                        Mobile
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/monitores">
+                        Monitores
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/tv-audio">
+                        TV & Audio
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/electrodomesticos">
+                        Electrodomésticos
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/ventas-especiales">
+                        Ventas especiales
+                    </a>
+                </li>
+    
+            </ul>
+            <ul class="main-header__item-list ">
+                <li class="main-header__item box-center_flex">
+                    <a class="login" href="/usuario/login">
+                        Usuario
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex carrito-contenedor">
+                    <a href="/carrito" class="cart-icon">
+                        Carrito vacío
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex carrito-contenedor">
+                    <a href="/carrito" class="cart-icon">
+                        Carrito con items
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/pedidos">
+                        Pedidos
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a>
+                        Búsqueda
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1>Su Carrito esta vacio</h1>
+                <button>¡Comienza a comprar!</button>
+            </article>
+            <article>
+                <h2>Formas de pago: </h2>
+                <img src="https://shop.samsung.com/medias/visa.png?context=bWFzdGVyfGltYWdlc3wzMzczfGltYWdlL3BuZ3xhREl5TDJneVl5ODRPRE15TnpjeE9ERTNOVEF5TDNacGMyRXVjRzVufDA5ZjAwOWUwZjM0OWE1NjE4MjkyZTk3NTc4ZGRiOWZlNTVlYTA5ZDg0ZDVmY2Q5ZGMxZTBmODNhYjMwNjdiOTc" alt="VISA" srcset="">
+                <img src="https://shop.samsung.com/medias/mastercard.png?context=bWFzdGVyfGltYWdlc3w0MTc2fGltYWdlL3BuZ3xhRFl3TDJneVlpODRPRE15TnpjeE9EZ3pNRE00TDIxaGMzUmxjbU5oY21RdWNHNW58MDVmMTM1Mzc1OTM2MzkwMjA4ZWI1MDBhZDNjMDdhNmJhN2EzNTI3MTk3M2UxMzdmYzMyNjU2Y2VhZDE0MDk2MQ" alt="MASTERCARD" srcset="">
+                <img src="https://shop.samsung.com/medias/americanexpress.png?context=bWFzdGVyfGltYWdlc3wxMDI0OXxpbWFnZS9wbmd8YURVNUwyZ3lNaTg0T0RNeU56Y3lNREUwTVRFd0wyRnRaWEpwWTJGdVpYaHdjbVZ6Y3k1d2JtY3w0MDgyNTUxNjA4MDk0MmQ1ZTI0NmQwYzAxODJlZGE1OGZkYzk0NDY2Y2UzOWMyNjY3MzMxZjk1OGQ4ZGFiZmI4" alt="AMERICANEXPRESS" srcset="">
+                <img src="https://shop.samsung.com/medias/dinersclub.png?context=bWFzdGVyfGltYWdlc3w1NTkyMnxpbWFnZS9wbmd8YUdVNEwyZ3lZeTg0T0RNeU56Y3lNelF4Tnprd0wyUnBibVZ5YzJOc2RXSXVjRzVufDIwY2U5MDM1MjFlZWE4ZjlhZTdhM2UyNzdlNzgwOTA2YzgxNjNkYjQyMTY1MGNjNTcwYTFiMDIxNzdiYTZmOTI" alt="DINERSCLUB" srcset="">
+                <img src="https://shop.samsung.com/medias/pagoefectivo.png?context=bWFzdGVyfGltYWdlc3w1ODQ4fGltYWdlL3BuZ3xhR0UyTDJnek15ODRPRE15TnpjeU5UTTRNems0TDNCaFoyOWxabVZqZEdsMmJ5NXdibWN8MjkyNDViMjcwNzk3N2ZmNWNjNjBkNmU2ZDdhNGNmN2Q3ODU3OWIzMmU0NTJiYTk3YjAxZjJlYjYxNDY5ZTY4Ng" alt="PAGOEFECTIVO" srcset="">
+                <img src="https://shop.samsung.com/medias/cuotealo-negativo.png?context=bWFzdGVyfGltYWdlc3w2MjU2fGltYWdlL3BuZ3xhRFF3TDJneVpDODRPRE15TnpjeU16YzBOVFU0TDJOMWIzUmxZV3h2TFc1bFoyRjBhWFp2TG5CdVp3fDdjNjk1NjU4NzY1OWMzNGVlZmFiYTljN2EzOWIwYTVmM2IzN2I1YzU1MDFlODYxOWYyYmY3NzM5OGE3MGE0NzA" alt="CUOTEALO-NEGATIVO" srcset="">
+                <img src="https://shop.samsung.com/medias/icon-samsung-rewards.png?context=bWFzdGVyfGltYWdlc3wxMzUxfGltYWdlL3BuZ3xhRGN3TDJnNU5DOHhNRE15TWpnek1EZ3hPVE0xT0M5cFkyOXVMWE5oYlhOMWJtY3RjbVYzWVhKa2N5NXdibWN8YWZiZTZiYTQ2ZjMyMmEwN2E0ZWRlN2I1ZWQ5YTI0MjZmOGZhNjUxYmVjNzk0ZmIyMmYyZjdjYTIwY2I3MGFhYQ" alt="ICON-SAMSUNG-REWARDS" srcset="">
+                <img src="https://shop.samsung.com/medias/Logo-YAPE.png?context=bWFzdGVyfHJvb3R8MzIxMDh8aW1hZ2UvcG5nfGFEQmxMMmcyWVM4eE5UQXhPRGszTVRJNU9UZzNNQzlNYjJkdkxWbEJVRVV1Y0c1bnxjYjA0ZDFiZjY0NDJlNGE2OGE4MzQyOTM2MjQzNGIyMWRkMjU2YjE0N2RiOWQzNjkzYzI1YzVjYWUyOGM0MDhi" alt="YAPE" srcset="">
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-links_columnas">
+                <h4>Otras secciones</h4>
+                <a href="/nosotros">Conócenos</a>
+            </div>
+            <div class="footer-links_columnas">
+                <h4>¿Necesitas soporte?</h4>
+                <a href="/faqs">Soporte técnico</a>
+                <a href="/condiciones-compra">Condiciones de Compra</a>
+            </div>
+            <div class="footer-links_columnas">
+                <h4>Redes sociales</h4>
+                <span class="footer-links_redes">
+                    <a href="https://www.linkedin.com/company/samsunglatin/" target="_blank">
+                        LinkedIn
+                    </a>
+                    <a href="https://www.youtube.com/user/SamsungLatin" target="_blank">
+                        YouTube
+                    </a>
+                    <a href="https://x.com/SamsungLatin/" target="_blank">
+                        X
+                    </a>
+                    <a href="https://www.facebook.com/SamsungLatin" target="_blank">
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/SamsungLatin/" target="_blank">
+                        Instagram
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 1995-2020 SAMSUNG. Todos los derechos reservados.</p>
+            <div class="footer-copyright_links">
+                <a href="/accesibilidad">Ayuda para accesibilidad</a>
+                <a href="/privacidad">Privacidad</a>
+                <a href="/legal">Legal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

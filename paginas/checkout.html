@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="main-header__carousel">
+            <div class="main-header__slider">
+                <div class="main-header__item-slider">Compara hasta en 36 cuotas a 0% de interés con BAC</div>
+                <div class="main-header__item-slider">Descubre los nuevos Galaxy Fold6 | Z Flip6</div>
+                <div class="main-header__item-slider">Compra ahora con ENVÍO GRATIS entre 24 y 72h</div>
+                <div class="main-header__item-slider">Proyecto grupo 4</div>
+            </div>
+        </div>
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list ">
+                <li class="main-header__item__logo box-center_flex">
+                    <a href="/">
+                        <div class="logo-container">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small_2x/samsung-logo-on-transparent-background-free-vector.jpg"
+                                alt="Samsung Logo">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-header__item-list ">
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/mobile">
+                        Mobile
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/monitores">
+                        Monitores
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/tv-audio">
+                        TV & Audio
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/electrodomesticos">
+                        Electrodomésticos
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/categoria/ventas-especiales">
+                        Ventas especiales
+                    </a>
+                </li>
+    
+            </ul>
+            <ul class="main-header__item-list ">
+                <li class="main-header__item box-center_flex">
+                    <a class="login" href="/usuario/login">
+                        Usuario
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex carrito-contenedor">
+                    <a href="/carrito" class="cart-icon">
+                        Carrito vacío
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex carrito-contenedor">
+                    <a href="/carrito" class="cart-icon">
+                        Carrito con items
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a href="/pedidos">
+                        Pedidos
+                    </a>
+                </li>
+                <li class="main-header__item box-center_flex">
+                    <a>
+                        Búsqueda
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Contacto</legend>
+                <input type="email" id="contacto" placeholder="Correo electrónico">
+                <br>
+                <input type="checkbox" id="publicidad">
+                <label for="publicidad">Enviarme novedades y ofertas por correo electrónico</label>
+            </fieldset>
+            <fieldset>
+                <legend>Entrega</legend>
+                <label for="pais">País</label>
+                <select name="pais" id="pais">
+                    <option value="peru">Perú</option>
+                    <option value="colombio">Colombia</option>
+                    <option value="chile">Chile</option>
+                    <option value="argentina">Argentina</option>
+                </select>
+                <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos">
+                <br>
+                <label for="dni">DNI</label>
+                <input type="number" name="dni" id="dni">
+                <br>
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion">
+                <br>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            </fieldset>
+            <fieldset>
+                <legend>Pago</legend>
+                <label for="numero-tarjeta">Número de la tarjeta</label>
+                <input type="number" id="numero-tarjeta">
+                <br>
+                <label for="nombre-titular">Nombre del titular</label>
+                <input type="text" id="nombre-titular">
+                <br>
+                <label for="fecha-expiracion">Fecha de expiración</label>
+                <input type="number" id="fecha-expiracion">
+                <br>
+                <label for="fecha-expiracion">CVC</label>
+                <input type="number" id="fecha-expiracion">
+            </fieldset>
+            <button type="submit">Pagar</button>
+        </form>
+        <aside>
+            <section>
+                <article>
+                    <div>
+                        <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/45eacecef37c2d34dea6bd1d0132e77c/s/m/sm-s721_sm-r400nzwalta_ef-gs721cjegww_thumb.png" alt="algun-producto">
+                    </div>
+                    <p>Algún producto</p>
+                    <p>S/. 40.00</p>
+                </article>
+            </section>
+            <div>
+                <div>
+                    <p>Subtotal</p>
+                    <p>S/. 40.00</p>
+                </div>
+                <div>
+                    <p>Envío</p>
+                    <p>S/. 13.00</p>
+                </div>
+                <div>
+                    <strong>Total</strong>
+                    <strong>S/. 53.00</strong>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-links_columnas">
+                <h4>Otras secciones</h4>
+                <a href="/nosotros">Conócenos</a>
+            </div>
+            <div class="footer-links_columnas">
+                <h4>¿Necesitas soporte?</h4>
+                <a href="/faqs">Soporte técnico</a>
+                <a href="/condiciones-compra">Condiciones de Compra</a>
+            </div>
+            <div class="footer-links_columnas">
+                <h4>Redes sociales</h4>
+                <span class="footer-links_redes">
+                    <a href="https://www.linkedin.com/company/samsunglatin/" target="_blank">
+                        LinkedIn
+                    </a>
+                    <a href="https://www.youtube.com/user/SamsungLatin" target="_blank">
+                        YouTube
+                    </a>
+                    <a href="https://x.com/SamsungLatin/" target="_blank">
+                        X
+                    </a>
+                    <a href="https://www.facebook.com/SamsungLatin" target="_blank">
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/SamsungLatin/" target="_blank">
+                        Instagram
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 1995-2020 SAMSUNG. Todos los derechos reservados.</p>
+            <div class="footer-copyright_links">
+                <a href="/accesibilidad">Ayuda para accesibilidad</a>
+                <a href="/privacidad">Privacidad</a>
+                <a href="/legal">Legal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
