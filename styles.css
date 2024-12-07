@@ -219,7 +219,55 @@ input {
     display: none;
 }
 
+/* FOOTER */
 
+.footer {
+    border-top: 1px solid #757575;
+    width: 100%;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #006BB4;
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.footer-links_columnas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links_redes {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-copyright {
+    display: flex;
+    background-color: #757575;
+    color: white;
+    font-size: 10px;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.footer-copyright_links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
 
 
 
@@ -249,7 +297,6 @@ input {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     /* HEADER NAVIGATION TABLET */
-
     .category-menu {
         display: none;
     }
@@ -268,8 +315,7 @@ input {
         font-size: 12px;
     }
 
-    /* HEADER NAVIGATION TABLET */
-
+    /* HEADER NAVIGATION MOBILE */
     .main-header__nav {
         padding: 0;
     }
@@ -286,11 +332,29 @@ input {
         display: flex;
     }
 
+    /* FOOTER MOBILE */
+
+    .footer-links {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        align-items: center;
+        padding-bottom: 24px;
+    }
+
+    .footer-links_columnas {
+        align-items: center;
+    }
+
+    .footer-copyright {
+        flex-direction: column-reverse;
+        padding: 8px 24px;
+        align-items: center;
+    }
+
     /* CARDS COMPRA MOBILE */
     .cards-info-shop {
         flex-direction: column;
         align-items: center;
     }
-
-
 }
