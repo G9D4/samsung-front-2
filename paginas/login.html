@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../styles/styleLogin.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,66 +22,67 @@
         </div>
         <nav class="main-header__nav">
             <ul class="main-header__item-list ">
-                <li class="main-header_item_logo box-center_flex">
+                <li>
                     <a href="/">
-                        <div class="logo-container">
+                        <div class="main-header_logo">
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small_2x/samsung-logo-on-transparent-background-free-vector.jpg"
                                 alt="Samsung Logo">
                         </div>
                     </a>
                 </li>
             </ul>
-            <ul class="main-header__item-list ">
-                <li class="main-header__item box-center_flex">
+            <ul class="main-header__item-list category-menu">
+                <li class="main-header__item ">
                     <a href="/categoria/mobile">
                         Mobile
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a href="/categoria/monitores">
                         Monitores
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a href="/categoria/tv-audio">
                         TV & Audio
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a href="/categoria/electrodomesticos">
                         Electrodomésticos
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a href="/categoria/ventas-especiales">
                         Ventas especiales
                     </a>
                 </li>
+
             </ul>
             <ul class="main-header__item-list ">
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a class="login" href="/usuario/login">
-                        Usuario
+                        <i class="fa fa-user"></i>
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex carrito-contenedor">
+                <li class="main-header__item  carrito-contenedor">
                     <a href="/carrito" class="cart-icon">
-                        Carrito vacío
+                        <i class="fa fa-cart-arrow-down"></i>
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex carrito-contenedor">
+                <li class="main-header__item  carrito-contenedor">
                     <a href="/carrito" class="cart-icon">
-                        Carrito con items
+                        <i class="fa fa-shopping-cart"></i>
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
-                    <a href="/pedidos">
-                        Pedidos
-                    </a>
-                </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a>
-                        Búsqueda
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li class="main-header__item menu-tablet-mobile">
+                    <a>
+                        <i class="fa fa-bars"></i>
                     </a>
                 </li>
             </ul>
@@ -106,7 +108,7 @@
                         </label>
                         <input class="inputText" type="password" name="password" id="password">
                         <br>
-                        <a href="/usuario/reset-password">Olvidé mi contraseña</a>
+                        <a href="/usuario/reset-password" class="text-color-skyblue">Olvidé mi contraseña</a>
                     </fieldset>
                     <button type="submit" class="btn-samsung">
                         <span>Iniciar sesion</span>
@@ -132,31 +134,31 @@
     <footer class="footer">
         <div class="footer-links">
             <div class="footer-links_columnas">
-                <h4>Otras secciones</h4>
+                <h4 class="text-color-dark">Otras secciones</h4>
                 <a href="/nosotros">Conócenos</a>
             </div>
             <div class="footer-links_columnas">
-                <h4>¿Necesitas soporte?</h4>
+                <h4 class="text-color-dark">¿Necesitas soporte?</h4>
                 <a href="/faqs">Soporte técnico</a>
                 <a href="/condiciones-compra">Condiciones de Compra</a>
             </div>
             <div class="footer-links_columnas">
-                <h4>Redes sociales</h4>
+                <h4 class="text-color-dark">Redes sociales</h4>
                 <span class="footer-links_redes">
                     <a href="https://www.linkedin.com/company/samsunglatin/" target="_blank">
-                        LinkedIn
+                        <i class="fa fa-linkedin-square"></i>
                     </a>
                     <a href="https://www.youtube.com/user/SamsungLatin" target="_blank">
-                        YouTube
+                        <i class="fa fa-youtube-play"></i>
                     </a>
                     <a href="https://x.com/SamsungLatin/" target="_blank">
-                        X
+                        <i class="fa fa-times"></i>
                     </a>
                     <a href="https://www.facebook.com/SamsungLatin" target="_blank">
-                        Facebook
+                        <i class="fa fa-facebook-official"></i>
                     </a>
                     <a href="https://www.instagram.com/SamsungLatin/" target="_blank">
-                        Instagram
+                        <i class="fa fa-instagram"></i>
                     </a>
                 </span>
             </div>
