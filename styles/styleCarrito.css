@@ -62,3 +62,48 @@ aside {
     flex: 1;
     margin: 0 10px;
 }
+/*---*/
+
+.main-content-carrito-vacio {
+            text-align: left;
+            padding: 2rem;
+            display: none; /* Por defecto oculto */
+        }
+
+        .carrito-info {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .info-box {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            flex: 1;
+            text-align: center;
+        }
+
+        .info-box i {
+            font-size: 2rem;
+            color: #0056b3;
+            margin-bottom: 1rem;
+        }
+
+        .info-box h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .info-box a {
+            color: #0056b3;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+   
