@@ -161,6 +161,117 @@ input {
     animation-play-state: paused;
 }
 
+/* HEADER NAVEGACIÓN */
+
+.main-header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: #FFFFFF;
+}
+
+.main-header__item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.main-header_logo {
+    height: 100%;
+    width: 120px;
+    cursor: pointer;
+}
+
+.main-header_logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.main-header_logo:hover img {
+    transform: scale(1.1);
+}
+
+.main-header__item {
+    align-content: center;
+    text-align: center;
+}
+
+.main-header__item a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border-radius: 24px;
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+    background-color: black;
+    color: white;
+}
+
+.menu-tablet-mobile {
+    display: none;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid #757575;
+    width: 100%;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #006BB4;
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.footer-links_columnas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links_redes {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-copyright {
+    display: flex;
+    background-color: #757575;
+    color: white;
+    font-size: 10px;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.footer-copyright_links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
 /* CARDS COMPRA */
 
 .cards-info-shop {
@@ -183,11 +294,63 @@ input {
 
 /* ESTILOS TABLET */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* HEADER NAVIGATION TABLET */
+    .category-menu {
+        display: none;
+    }
+
+    .menu-tablet-mobile {
+        display: flex;
+    }
+}
 
 /* ESTILOS MOBILE */
 
 @media screen and (max-width: 767px) {
+
+    /* HEADER PUBLICIDAD MOBILE */
+    .main-header__slider {
+        font-size: 12px;
+    }
+
+    /* HEADER NAVIGATION MOBILE */
+    .main-header__nav {
+        padding: 0;
+    }
+
+    .main-header__item-list {
+        gap: 8px;
+    }
+
+    .category-menu {
+        display: none;
+    }
+
+    .menu-tablet-mobile {
+        display: flex;
+    }
+
+    /* FOOTER MOBILE */
+
+    .footer-links {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        align-items: center;
+        padding-bottom: 24px;
+    }
+
+    .footer-links_columnas {
+        align-items: center;
+    }
+
+    .footer-copyright {
+        flex-direction: column-reverse;
+        padding: 8px 24px;
+        align-items: center;
+    }
 
     /* CARDS COMPRA MOBILE */
     .cards-info-shop {
