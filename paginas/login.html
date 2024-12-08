@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/styleLogin.css">
 </head>
 
 <body>
@@ -86,13 +87,13 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Inicio de sesión de cliente</h1>
+        <section class="container">
+            <h1 id="page-title">Inicio de sesión de cliente</h1>
             <article>
                 <h2>Clientes registrados</h2>
                 <p>Si tienes una cuenta, inicia sesión con tu dirección de correo electrónico.</p>
                 <form action="">
-                    <fieldset>
+                    <fieldset class="datos">
                         <label for="email">
                             Correo electrónico
                             <span class="asterisco">*</span>
@@ -115,15 +116,15 @@
                 </form>
             </article>
         </section>
-        <section>
+        <section class="container">
             <article>
                 <h2>Nuevos clientes</h2>
                 <p>Crear una cuenta tiene muchos beneficios: Pago más rápido, guardar más de una dirección,
                     seguimiento de pedidos y mucho más.</p>
                 <form action="">
-                        <button type="submit" class="btn-samsung">
-                            <span>Crear una cuenta</span>
-                        </button>
+                    <button type="submit" class="btn-samsung">
+                        <span>Crear una cuenta</span>
+                    </button>
                 </form>
             </article>
         </section>
