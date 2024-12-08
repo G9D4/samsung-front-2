@@ -104,30 +104,6 @@ h4 {
     background-color: #0056b3;
 }
 
-.form-botonRegister {
-    text-align: center;
-    margin-top: 24px;
-}
-
-.submit-button {
-    background-color: #2089FF;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 24px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-}
-
-.submit-button:hover {
-    background-color: #0056b3;
-}
-
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .create-account-form {
@@ -136,10 +112,5 @@ h4 {
 
     .form-section {
         padding: 12px;
-    }
-
-    .submit-button {
-        padding: 10px 16px;
-        font-size: 13px;
     }
 }
