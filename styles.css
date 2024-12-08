@@ -230,6 +230,7 @@ footer a {
     color: #000000;
     text-decoration: none;
 }
+
 footer a:hover {
     color: #006BB4;
     text-decoration: underline;
@@ -357,37 +358,34 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
     }
- 
+
 }
 
-.selected-products h2{
+/* LISTA PRODUCTOS */
+
+.lista-productos-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 0;
+}
+
+.selected-products h2 {
     text-align: center;
 }
+
 .product-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: stretch;
     margin-top: 1rem;
     /* Espaciado superior */
     gap: 1rem;
     /* Espacio entre los elementos, ajusta el valor según necesites */
-  }
+}
 
 .product-item {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 20rem;
-    max-width: 95%;
-    margin: 1rem auto;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    align-items: center; */
     width: 18rem;
     max-width: 95%;
     border: 1px solid #e4e4e4;
@@ -396,18 +394,56 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:0 10px 5px 10px;
+    padding: 0 10px 5px 10px;
 }
+
 .card__image {
     width: 100%;
-  }
-  .product__title {
+}
+
+.product__title {
     font-size: 1.2rem;
     text-align: center;
     color: #1f1f1f;
 }
+
 .product__price {
     text-align: center;
     color: #2089ff;
     margin-bottom: 0.5rem;
+}
+
+/* CARRUSEL HOME 1 */
+
+.carousel-wrapper {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    animation: slideh1 16s infinite;
+}
+
+.carousel-wrapper:hover {
+    animation-play-state: paused;
+}
+
+.carousel-slide {
+    width: 100%;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+@keyframes slideh1 {
+    0% { right: 0; }
+    33% { right: 100%;}
+    66% { right: 200%;}
+    100% { right: 0;}
 }
