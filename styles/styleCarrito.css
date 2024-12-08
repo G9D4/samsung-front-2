@@ -1,1 +1,64 @@
 /*Estilos para la pagina del carrito de compras*/
+
+.main-content-carrito{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.page-carrito-titulo-wrapper{
+    margin: 40px 0 20px;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.page-title-carrito{
+    color: #242688;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    flex: 1;
+    margin-right: 20px;
+}
+aside {
+    flex: 0 0 300px; /* Ancho fijo del aside */
+}
+
+/* Layout para pantallas grandes */
+ @media (min-width: 768px) {
+    .main-content-carrito {
+        flex-direction: row;
+    }
+    section {
+        margin-right: 20px;
+    }
+    aside {
+        flex: 0 0 300px;
+    }
+}
+
+/* Layout para pantallas pequeñas*/
+@media (max-width: 767px) {
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container button {
+        margin: 10px 0;
+    }
+}
+
+
+.carrito-button-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carrito-button-container button {
+    flex: 1;
+    margin: 0 10px;
+}
