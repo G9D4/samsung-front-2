@@ -49,6 +49,9 @@ aside {
     .button-container button {
         margin: 10px 0;
     }
+    .carrito-info {
+        flex-direction: column;
+    }
 }
 
 
