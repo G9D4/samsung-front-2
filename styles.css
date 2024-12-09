@@ -36,6 +36,10 @@ input:focus {
     width: fit-content !important;
 }
 
+.btn-responsive {
+    width: fit-content !important;
+}
+
 .primary-btn {
     background-color: #2089FF;
     color: #FFFFFF;
@@ -97,6 +101,7 @@ input {
 
 .asterisk {
     color: red;
+    font-size: small;
 }
 
 .text-color-dark {
@@ -318,9 +323,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* LOGIN */
+/* LOGIN Y REGISTRO */
 
-.login {
+.login, .registro {
     max-width: 530px;
     margin: auto;
     padding: 20px;
@@ -354,23 +359,6 @@ footer a:hover {
     box-sizing: border-box;
 }
 
-.asterisco {
-    color: red;
-    font-size: small;
-}
-
-.btn-samsung {
-    background: #2089ff;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px 20px;
-    letter-spacing: 2.4px;
-    border-radius: 100px;
-    cursor: pointer;
-    width: fit-content;
-}
-
 .forgot-password {
     text-decoration: none;
     font-size: 14px;
@@ -379,6 +367,7 @@ footer a:hover {
 .forgot-password:hover {
     text-decoration: underline;
 }
+
 
 /* CHECKOUT */
 
@@ -503,9 +492,9 @@ footer a:hover {
         display: flex;
     }
 
-    /* LOGIN TABLET */
+    /* LOGIN Y REGISTRO TABLET */
 
-    .login {
+    .login, .registro {
         max-width: 700px;
     }
 }
@@ -515,6 +504,12 @@ footer a:hover {
 /* ESTILOS MOBILE */
 
 @media screen and (max-width: 767px) {
+
+    /* ESTILOS BÁSICOS MOBILE */
+
+    .btn-responsive {
+        width: 100% !important;
+    }
 
     /* HEADER PUBLICIDAD MOBILE */
     .main-header__slider {
@@ -564,14 +559,10 @@ footer a:hover {
         align-items: center;
     }
 
-    /* LOGIN MOBILE */
+    /* LOGIN Y REGISTRO MOBILE */
 
     .container {
         gap: 5px;
-    }
-
-    .btn-samsung {
-        width: 100%;
     }
 
     /* CHECKOUT MOBILE */

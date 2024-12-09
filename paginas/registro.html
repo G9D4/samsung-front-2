@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Nueva Cuenta</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../styles/styleRegistro.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -86,7 +85,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="registro">
         <section class="container">
             <h1 id="page-title">Registro de cliente</h1>
             <article>
@@ -95,19 +94,19 @@
                     <fieldset class="datos">
                         <label for="nombres">
                             Nombres
-                            <span class="asterisco">*</span>
+                            <span class="asterisk">*</span>
                         </label>
                         <input class="inputText" type="text" name="nombres" id="nombres" required>
-                        <br>
+                        
                         <label for="apellidos">
                             Apellidos
-                            <span class="asterisco">*</span>
+                            <span class="asterisk">*</span>
                         </label>
                         <input class="inputText" type="text" name="apellidos" id="apellidos" required>
-                        <br>
+                        
                         <label for="telefono">
                             Teléfono
-                            <span class="asterisco">*</span>
+                            <span class="asterisk">*</span>
                         </label>
                         <input class="inputText" type="tel" name="telefono" id="telefono" required>
                     </fieldset>
@@ -121,25 +120,26 @@
                     <fieldset class="datos">
                         <label for="correo">
                             Correo electrónico
-                            <span class="asterisco">*</span>
+                            <span class="asterisk">*</span>
                         </label>
                         <input class="inputText" type="email" name="correo" id="correo" required>
-                        <br>
+                        
                         <label for="password">
                             Contraseña
-                            <span class="asterisco">*</span>
+                            <span class="asterisk">*</span>
                         </label>
                         <input class="inputText" type="password" name="password" id="password" required>
-                        <br>
+                        
                         <label for="password_confirm">
                             Confirmar contraseña
-                            <span class="asterisco">*</span>
+                            <span class="asterisk">*</span>
                         </label>
                         <input class="inputText" type="password" name="password_confirm" id="password_confirm" required>
+                        <br>
                     </fieldset>
-                    <button class="primary-btn btn-fit-content" type="submit">Crear Cuenta</button>
+                    <button class="primary-btn btn-responsive" type="submit">Crear Cuenta</button>
                     <br>
-                    <span class="asterisco">*Campos obligatorios</span>
+                    <span class="asterisk">*Campos obligatorios</span>
                 </form>
             </article>
         </section>
