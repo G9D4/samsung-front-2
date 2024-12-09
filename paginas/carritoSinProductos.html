@@ -7,6 +7,7 @@
     <title>CarritoSinProductos</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../styles/styleCarrito.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,13 +20,6 @@
                 <div class="main-header__item-slider">Proyecto grupo 4</div>
             </div>
         </div>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CarritoConProductos</title>
-        <link rel="stylesheet" href="../styles.css">
-        <link rel="stylesheet" href="../styles/styleCarrito.css">
-        
         <nav class="main-header__nav">
             <ul class="main-header__item-list ">
                 <li>
@@ -93,69 +87,39 @@
             </ul>
         </nav>
     </header>
-    <main>
-       
-        <main>
-            <!-- -->
-            <section class="main-content-carrito-vacio" style="display: block;">
-                <h1 class="page-title-carrito">
-                    <span>carrito</span>
-                </h1>
-                <p>No tienes ningún artículo en tu carrito.</p>
-                <p><a href="/" class="seguir-comprando">haz click aquí para continuar comprando.</a></p>
-        
-                <div class="carrito-info">
-                    <div class="info-box">
-                        <i class="fa fa-shield-alt"></i>
-                        <h3>Tu compra está protegida</h3>
-                        <p>Procesamos los pagos con plataformas certificadas 100% seguras. No guardamos ni manipulamos datos sensibles.</p>
-                        <a href="/seguridad">Ver información de seguridad y pagos</a>
-                    </div>
-                    <div class="info-box">
-                        <i class="fa fa-truck"></i>
-                        <h3>Envíos Gratis entre 24 y 72 h</h3>
-                        <p>Envíos para productos mobile el mismo día del pago, para el resto entre 24 y 72h.</p>
-                        <a href="/envios">Ver condiciones y zonas de entrega</a>
-                    </div>
-                    <div class="info-box">
-                        <i class="fa fa-question-circle"></i>
-                        <h3>¿Tienes dudas?</h3>
-                        <p>Estamos para ayudarte. Contáctanos por chat, teléfono o email.</p>
-                        <a href="/contacto">Ver canales de contacto</a>
-                    </div>
-                </div>
-            </section>
-    
-        </main>
-
-        
+    <main class="carrito">
         <section class="main-content-carrito-vacio">
-            <h1 class="page-title-carrito">
-                <span>carrito</span>
-            </h1>
+            <h1 class="page-title-carrito">Carrito</h1>
             <p>No tienes ningún artículo en tu carrito.</p>
-            <p><a href="/" class="seguir-comprando">haz click aquí para continuar comprando.</a></p>
+            <a href="/" class="seguir-comprando">Haz click aquí para continuar comprando.</a>
 
-            <div class="carrito-info">
-                <div class="info-box">
-                    <i class="fa fa-shield-alt"></i>
-                    <h3>Tu compra está protegida</h3>
-                    <p>Procesamos los pagos con plataformas certificadas 100% seguras. No guardamos ni manipulamos datos sensibles.</p>
-                    <a href="/seguridad">Ver información de seguridad y pagos</a>
-                </div>
-                <div class="info-box">
-                    <i class="fa fa-truck"></i>
-                    <h3>Envíos Gratis entre 24 y 72 h</h3>
-                    <p>Envíos para productos mobile el mismo día del pago, para el resto entre 24 y 72h.</p>
-                    <a href="/envios">Ver condiciones y zonas de entrega</a>
-                </div>
-                <div class="info-box">
-                    <i class="fa fa-question-circle"></i>
-                    <h3>¿Tienes dudas?</h3>
-                    <p>Estamos para ayudarte. Contáctanos por chat, teléfono o email.</p>
-                    <a href="/contacto">Ver canales de contacto</a>
-                </div>
-            </div>
+        </section>
+        <section class="cards-info-shop">
+            <article class="card-info background-color-gray">
+                <i class="fa fa-shield card-info_icon"></i>
+                <h3 class="card-info_title">Tu compra está protegida</h3>
+                <p class="card-info_p">Procesamos los pagos con plataformas certificadas 100% seguras. No guardamos ni
+                    manipulamos datos sensibles.</p>
+                <a class="card-info_a text-color-dark">Ver información de seguridad y pagos</a>
+            </article>
+            <article class="card-info background-color-gray">
+                <i class="fa fa-truck card-info_icon"></i>
+                <h3 class="card-info_title">Envíos Gratis entre 24 y 72h</h3>
+                <p class="card-info_p">Envíos para productos mobile en el mismo día de procesado el pago, para el resto del
+                    catálogo entre 24 y 72h.</p>
+                <a class="card-info_a text-color-dark">Ver condiciones y zonas de entregas</a>
+            </article>
+            <article class="card-info background-color-gray">
+                <i class="fa fa-question-circle card-info_icon"></i>
+                <h3 class="card-info_title">¿Tienes dudas?</h3>
+                <p class="card-info_p">
+                    Estamos para ayudarte. Contáctanos por chat, por teléfono o email.
+                    <br>
+                    <br>
+                    L a V de 7:30 a 19:30 | S de 8 a 12
+                </p>
+                <a class="card-info_a text-color-dark">Ver canales de contacto</a>
+            </article>
         </section>
     </main>
     <footer class="footer">
