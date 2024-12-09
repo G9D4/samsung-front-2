@@ -27,6 +27,11 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+input:focus {
+    border-color: #2089ff;
+    outline: none;
+}
+
 .btn-fit-content {
     width: fit-content !important;
 }
@@ -313,6 +318,68 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* LOGIN */
+
+.login {
+    max-width: 530px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+#page-title {
+    font-size: 24px;
+    color: #222488;
+    margin: 0;
+}
+
+.datos {
+    display: grid;
+    gap: 10px;
+    border: none;
+    padding: 0;
+}
+
+.inputText {
+    width: 100%;
+    height: 32px;
+    padding: 0 9px;
+    font-size: 14px;
+    border: 1px solid #c2c2c2;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.asterisco {
+    color: red;
+    font-size: small;
+}
+
+.btn-samsung {
+    background: #2089ff;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    letter-spacing: 2.4px;
+    border-radius: 100px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.forgot-password {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
 /* CHECKOUT */
 
 .checkout {
@@ -435,6 +502,12 @@ footer a:hover {
     .menu-tablet-mobile {
         display: flex;
     }
+
+    /* LOGIN TABLET */
+
+    .login {
+        max-width: 700px;
+    }
 }
 
 
@@ -489,6 +562,16 @@ footer a:hover {
     .cards-info-shop {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* LOGIN MOBILE */
+
+    .container {
+        gap: 5px;
+    }
+
+    .btn-samsung {
+        width: 100%;
     }
 
     /* CHECKOUT MOBILE */

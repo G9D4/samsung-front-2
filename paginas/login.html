@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../styles/styleLogin.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
@@ -88,7 +87,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="login">
         <section class="container">
             <h1 id="page-title">Inicio de sesión de cliente</h1>
             <article>
@@ -101,18 +100,20 @@
                             <span class="asterisco">*</span>
                         </label>
                         <input class="inputText" type="email" name="email" id="email">
-                        <br>
+                
                         <label for="password">
                             Contraseña
                             <span class="asterisco">*</span>
                         </label>
                         <input class="inputText" type="password" name="password" id="password">
+                        
+                        <a class="forgot-password" href="/usuario/reset-password" class="text-color-skyblue">Olvidé mi contraseña</a>
                         <br>
-                        <a href="/usuario/reset-password" class="text-color-skyblue">Olvidé mi contraseña</a>
                     </fieldset>
                     <button type="submit" class="btn-samsung">
                         <span>Iniciar sesion</span>
                     </button>
+                    <br>
                     <br>
                     <span class="asterisco">*Campos obligatorios</span>
                 </form>

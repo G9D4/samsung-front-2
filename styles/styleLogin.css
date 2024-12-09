@@ -1,11 +1,7 @@
-main {
+.login {
     max-width: 530px;
     margin: auto;
     padding: 20px;
-}
-
-label {
-    font-weight: bold;
 }
 
 .container {
@@ -16,12 +12,14 @@ label {
 #page-title {
     font-size: 24px;
     color: #222488;
+    margin: 0;
 }
 
 .datos {
     display: grid;
     gap: 10px;
     border: none;
+    padding: 0;
 }
 
 .inputText {
@@ -56,19 +54,16 @@ label {
     width: fit-content;
 }
 
-a {
+.forgot-password {
     text-decoration: none;
     font-size: 14px;
 }
 
-a:hover {
+.forgot-password:hover {
     text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
-    main {
-        padding: 10px;
-    }
 
     .container {
         gap: 5px;
@@ -80,7 +75,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    main {
+    .login {
         max-width: 700px;
     }
 }
