@@ -27,14 +27,6 @@
     padding: 24px;
 }
 
-/* section {
-    flex: 1;
-    margin-right: 20px;
-}
-aside {
-    flex: 0 0 300px;
-} */
-
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -44,10 +36,6 @@ aside {
     display: flex;
     flex-direction: column;
 }
-
-
-
-
 
 .carrito-button-container {
     display: flex;
@@ -68,8 +56,6 @@ aside {
     flex-direction: row;
     justify-content: space-between;
 }
-
-/*---*/
 
 .main-content-carrito-vacio {
     padding: 2rem;
