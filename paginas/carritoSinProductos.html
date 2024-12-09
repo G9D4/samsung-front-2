@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarritoSinProductos</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/styleCarrito.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="main-header__carousel">
@@ -18,119 +22,134 @@
         </div>
         <nav class="main-header__nav">
             <ul class="main-header__item-list ">
-                <li class="main-header_item_logo box-center_flex">
+                <li>
                     <a href="/">
-                        <div class="logo-container">
+                        <div class="main-header_logo">
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small_2x/samsung-logo-on-transparent-background-free-vector.jpg"
                                 alt="Samsung Logo">
                         </div>
                     </a>
                 </li>
             </ul>
-            <ul class="main-header__item-list ">
-                <li class="main-header__item box-center_flex">
+            <ul class="main-header__item-list category-menu">
+                <li class="main-header__item ">
                     <a href="/categoria/mobile">
                         Mobile
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a href="/categoria/monitores">
                         Monitores
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a href="/categoria/tv-audio">
                         TV & Audio
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a href="/categoria/electrodomesticos">
                         Electrodomésticos
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a href="/categoria/ventas-especiales">
                         Ventas especiales
                     </a>
                 </li>
-    
             </ul>
             <ul class="main-header__item-list ">
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a class="login" href="/usuario/login">
-                        Usuario
+                        <i class="fa fa-user"></i>
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex carrito-contenedor">
+                <li class="main-header__item  carrito-contenedor">
                     <a href="/carrito" class="cart-icon">
-                        Carrito vacío
+                        <i class="fa fa-cart-arrow-down"></i>
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex carrito-contenedor">
+                <li class="main-header__item  carrito-contenedor">
                     <a href="/carrito" class="cart-icon">
-                        Carrito con items
+                        <i class="fa fa-shopping-cart"></i>
                     </a>
                 </li>
-                <li class="main-header__item box-center_flex">
-                    <a href="/pedidos">
-                        Pedidos
-                    </a>
-                </li>
-                <li class="main-header__item box-center_flex">
+                <li class="main-header__item ">
                     <a>
-                        Búsqueda
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li class="main-header__item menu-tablet-mobile">
+                    <a>
+                        <i class="fa fa-bars"></i>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <article>
-                <h1>Su Carrito esta vacio</h1>
-                <button>¡Comienza a comprar!</button>
+    <main class="carrito">
+        <section class="main-content-carrito-vacio">
+            <h1 class="page-title-carrito">Carrito</h1>
+            <p>No tienes ningún artículo en tu carrito.</p>
+            <a href="/" class="seguir-comprando">Haz click aquí para continuar comprando.</a>
+
+        </section>
+        <section class="cards-info-shop">
+            <article class="card-info background-color-gray">
+                <i class="fa fa-shield card-info_icon"></i>
+                <h3 class="card-info_title">Tu compra está protegida</h3>
+                <p class="card-info_p">Procesamos los pagos con plataformas certificadas 100% seguras. No guardamos ni
+                    manipulamos datos sensibles.</p>
+                <a class="card-info_a text-color-dark">Ver información de seguridad y pagos</a>
             </article>
-            <article>
-                <h2>Formas de pago: </h2>
-                <img src="https://shop.samsung.com/medias/visa.png?context=bWFzdGVyfGltYWdlc3wzMzczfGltYWdlL3BuZ3xhREl5TDJneVl5ODRPRE15TnpjeE9ERTNOVEF5TDNacGMyRXVjRzVufDA5ZjAwOWUwZjM0OWE1NjE4MjkyZTk3NTc4ZGRiOWZlNTVlYTA5ZDg0ZDVmY2Q5ZGMxZTBmODNhYjMwNjdiOTc" alt="VISA" srcset="">
-                <img src="https://shop.samsung.com/medias/mastercard.png?context=bWFzdGVyfGltYWdlc3w0MTc2fGltYWdlL3BuZ3xhRFl3TDJneVlpODRPRE15TnpjeE9EZ3pNRE00TDIxaGMzUmxjbU5oY21RdWNHNW58MDVmMTM1Mzc1OTM2MzkwMjA4ZWI1MDBhZDNjMDdhNmJhN2EzNTI3MTk3M2UxMzdmYzMyNjU2Y2VhZDE0MDk2MQ" alt="MASTERCARD" srcset="">
-                <img src="https://shop.samsung.com/medias/americanexpress.png?context=bWFzdGVyfGltYWdlc3wxMDI0OXxpbWFnZS9wbmd8YURVNUwyZ3lNaTg0T0RNeU56Y3lNREUwTVRFd0wyRnRaWEpwWTJGdVpYaHdjbVZ6Y3k1d2JtY3w0MDgyNTUxNjA4MDk0MmQ1ZTI0NmQwYzAxODJlZGE1OGZkYzk0NDY2Y2UzOWMyNjY3MzMxZjk1OGQ4ZGFiZmI4" alt="AMERICANEXPRESS" srcset="">
-                <img src="https://shop.samsung.com/medias/dinersclub.png?context=bWFzdGVyfGltYWdlc3w1NTkyMnxpbWFnZS9wbmd8YUdVNEwyZ3lZeTg0T0RNeU56Y3lNelF4Tnprd0wyUnBibVZ5YzJOc2RXSXVjRzVufDIwY2U5MDM1MjFlZWE4ZjlhZTdhM2UyNzdlNzgwOTA2YzgxNjNkYjQyMTY1MGNjNTcwYTFiMDIxNzdiYTZmOTI" alt="DINERSCLUB" srcset="">
-                <img src="https://shop.samsung.com/medias/pagoefectivo.png?context=bWFzdGVyfGltYWdlc3w1ODQ4fGltYWdlL3BuZ3xhR0UyTDJnek15ODRPRE15TnpjeU5UTTRNems0TDNCaFoyOWxabVZqZEdsMmJ5NXdibWN8MjkyNDViMjcwNzk3N2ZmNWNjNjBkNmU2ZDdhNGNmN2Q3ODU3OWIzMmU0NTJiYTk3YjAxZjJlYjYxNDY5ZTY4Ng" alt="PAGOEFECTIVO" srcset="">
-                <img src="https://shop.samsung.com/medias/cuotealo-negativo.png?context=bWFzdGVyfGltYWdlc3w2MjU2fGltYWdlL3BuZ3xhRFF3TDJneVpDODRPRE15TnpjeU16YzBOVFU0TDJOMWIzUmxZV3h2TFc1bFoyRjBhWFp2TG5CdVp3fDdjNjk1NjU4NzY1OWMzNGVlZmFiYTljN2EzOWIwYTVmM2IzN2I1YzU1MDFlODYxOWYyYmY3NzM5OGE3MGE0NzA" alt="CUOTEALO-NEGATIVO" srcset="">
-                <img src="https://shop.samsung.com/medias/icon-samsung-rewards.png?context=bWFzdGVyfGltYWdlc3wxMzUxfGltYWdlL3BuZ3xhRGN3TDJnNU5DOHhNRE15TWpnek1EZ3hPVE0xT0M5cFkyOXVMWE5oYlhOMWJtY3RjbVYzWVhKa2N5NXdibWN8YWZiZTZiYTQ2ZjMyMmEwN2E0ZWRlN2I1ZWQ5YTI0MjZmOGZhNjUxYmVjNzk0ZmIyMmYyZjdjYTIwY2I3MGFhYQ" alt="ICON-SAMSUNG-REWARDS" srcset="">
-                <img src="https://shop.samsung.com/medias/Logo-YAPE.png?context=bWFzdGVyfHJvb3R8MzIxMDh8aW1hZ2UvcG5nfGFEQmxMMmcyWVM4eE5UQXhPRGszTVRJNU9UZzNNQzlNYjJkdkxWbEJVRVV1Y0c1bnxjYjA0ZDFiZjY0NDJlNGE2OGE4MzQyOTM2MjQzNGIyMWRkMjU2YjE0N2RiOWQzNjkzYzI1YzVjYWUyOGM0MDhi" alt="YAPE" srcset="">
+            <article class="card-info background-color-gray">
+                <i class="fa fa-truck card-info_icon"></i>
+                <h3 class="card-info_title">Envíos Gratis entre 24 y 72h</h3>
+                <p class="card-info_p">Envíos para productos mobile en el mismo día de procesado el pago, para el resto del
+                    catálogo entre 24 y 72h.</p>
+                <a class="card-info_a text-color-dark">Ver condiciones y zonas de entregas</a>
+            </article>
+            <article class="card-info background-color-gray">
+                <i class="fa fa-question-circle card-info_icon"></i>
+                <h3 class="card-info_title">¿Tienes dudas?</h3>
+                <p class="card-info_p">
+                    Estamos para ayudarte. Contáctanos por chat, por teléfono o email.
+                    <br>
+                    <br>
+                    L a V de 7:30 a 19:30 | S de 8 a 12
+                </p>
+                <a class="card-info_a text-color-dark">Ver canales de contacto</a>
             </article>
         </section>
     </main>
     <footer class="footer">
         <div class="footer-links">
             <div class="footer-links_columnas">
-                <h4>Otras secciones</h4>
+                <h4 class="text-color-dark">Otras secciones</h4>
                 <a href="/nosotros">Conócenos</a>
             </div>
             <div class="footer-links_columnas">
-                <h4>¿Necesitas soporte?</h4>
+                <h4 class="text-color-dark">¿Necesitas soporte?</h4>
                 <a href="/faqs">Soporte técnico</a>
                 <a href="/condiciones-compra">Condiciones de Compra</a>
             </div>
             <div class="footer-links_columnas">
-                <h4>Redes sociales</h4>
+                <h4 class="text-color-dark">Redes sociales</h4>
                 <span class="footer-links_redes">
                     <a href="https://www.linkedin.com/company/samsunglatin/" target="_blank">
-                        LinkedIn
+                        <i class="fa fa-linkedin-square"></i>
                     </a>
                     <a href="https://www.youtube.com/user/SamsungLatin" target="_blank">
-                        YouTube
+                        <i class="fa fa-youtube-play"></i>
                     </a>
                     <a href="https://x.com/SamsungLatin/" target="_blank">
-                        X
+                        <i class="fa fa-times"></i>
                     </a>
                     <a href="https://www.facebook.com/SamsungLatin" target="_blank">
-                        Facebook
+                        <i class="fa fa-facebook-official"></i>
                     </a>
                     <a href="https://www.instagram.com/SamsungLatin/" target="_blank">
-                        Instagram
+                        <i class="fa fa-instagram"></i>
                     </a>
                 </span>
             </div>
@@ -144,5 +163,5 @@
             </div>
         </div>
     </footer>
+
 </body>
-</html>
