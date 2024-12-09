@@ -88,83 +88,85 @@
         </nav>
     </header>
     <main class="main-content-carrito">
-        <section>
-            <div class="page-carrito-titulo-wrapper">
-                <h1 class="page-title-carrito">
-                    <span>carrito</span>
-                </h1>
-            </div>
-            <table>
-                <tr>
-                    <th>Articulo</th>
-                    <th>Descripción</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th>Subtotal</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/s/m/sm-s721_galaxys24fe_gray_front_thumb.png"
-                            alt="GALAXY S24" srcset="">
-                    </td>
-                    <td>Color: Gray</td>
-                    <td>US$ 719.00</td>
-                    <td>
-                        <input type="number" name="cantidad" id="cantidad" value="1">
-                    </td>
-                    <td>US$ 719.00</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/e/f/ef-gs721c_003_front_gray_thumb.png"
-                            alt="GALAXY S24 STANDING CASE" srcset="">
-                    </td>
-                    <td>GRATIS</td>
-                    <td>US$ 0.00</td>
-                    <td>
-                        <input type="number" name="cantidad" id="cantidad" value="1">
-                    </td>
-                    <td>US$ 0.00</td>
-                </tr>
-            </table>
-            <div class="carrito-button-container">
-                <button class="terciary-btn">Aplicar Código de descuento</button>
-                <button class="secondary-btn">Actualizar Carrito</button>
-            </div>
-        </section>
-        <aside>
-            <form>
-                <h2>Resumen</h2>
-                <p>Subtotal: US$ 719.00</p>
-                <p>Impuestos US$ 50.33</p>
-                <h3>Total incluyendo impuestos US$ 769.33</h3>
-                <h3>Total sin incluir impuestos US$ 719.00</h3>
-                <button class="primary-btn" type="submit">Finalizar Pedido</button>
-            </form>
-        </aside>
-    </main>
-    <section>
-        <div class="carrito-info">
-            <div class="info-box">
-                <i class="fa fa-shield-alt"></i>
-                <h3>Tu compra está protegida</h3>
-                <p>Procesamos los pagos con plataformas certificadas 100% seguras. No guardamos ni manipulamos datos sensibles.</p>
-                <a href="/seguridad">Ver información de seguridad y pagos</a>
-            </div>
-            <div class="info-box">
-                <i class="fa fa-truck"></i>
-                <h3>Envíos Gratis entre 24 y 72 h</h3>
-                <p>Envíos para productos mobile el mismo día del pago, para el resto entre 24 y 72h.</p>
-                <a href="/envios">Ver condiciones y zonas de entrega</a>
-            </div>
-            <div class="info-box">
-                <i class="fa fa-question-circle"></i>
-                <h3>¿Tienes dudas?</h3>
-                <p>Estamos para ayudarte. Contáctanos por chat, teléfono o email.</p>
-                <a href="/contacto">Ver canales de contacto</a>
-            </div>
+        <div class="page-carrito-titulo-wrapper">
+            <h1 class="page-title-carrito">
+                <span>carrito</span>
+            </h1>
         </div>
-    </section>
+        <div class="content-wrapper">
+            <section class="flex-row">
+                <table>
+                    <tr>
+                        <th>Articulo</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/s/m/sm-s721_galaxys24fe_gray_front_thumb.png"
+                                alt="GALAXY S24" srcset="">
+                        </td>
+                        <td>Color: Gray</td>
+                        <td>US$ 719.00</td>
+                        <td>
+                            <input type="number" name="cantidad" id="cantidad" value="1">
+                        </td>
+                        <td>US$ 719.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://shop.samsung.com/latin/pub/media/catalog/product/cache/6cd1311462f4ff327d90cc1375d833bb/e/f/ef-gs721c_003_front_gray_thumb.png"
+                                alt="GALAXY S24 STANDING CASE" srcset="">
+                        </td>
+                        <td>GRATIS</td>
+                        <td>US$ 0.00</td>
+                        <td>
+                            <input type="number" name="cantidad" id="cantidad" value="1">
+                        </td>
+                        <td>US$ 0.00</td>
+                    </tr>
+                </table>
+            </section>
+            <aside class="flex-row">
+                <form id="form-pedido">
+                    <h2>Resumen</h2>
+                    <p>Subtotal: </p>
+                    <p>US$ 719.00</p>
+                    <p>Impuestos: </p>
+                    <p>US$ 50.33</p>
+                    <h3>Total incluyendo impuestos US$ 769.33</h3>
+                    <h3>Total sin incluir impuestos US$ 719.00</h3>
+                    <button class="primary-btn" type="submit">Finalizar Pedido</button>
+                </form>
+            </aside>
+        </div>
+            <div class="carrito-button-container">
+            <button class="terciary-btn">Aplicar Código de descuento</button>
+            <button class="secondary-btn">Actualizar Carrito</button>
+        </div>
+        <div class="carrito-info">
+                <div class="info-box">
+                    <i class="fa fa-shield-alt"></i>
+                    <h3>Tu compra está protegida</h3>
+                    <p>Procesamos los pagos con plataformas certificadas 100% seguras. No guardamos ni manipulamos datos sensibles.</p>
+                    <a href="/seguridad">Ver información de seguridad y pagos</a>
+                </div>
+                <div class="info-box">
+                    <i class="fa fa-truck"></i>
+                    <h3>Envíos Gratis entre 24 y 72 h</h3>
+                    <p>Envíos para productos mobile el mismo día del pago, para el resto entre 24 y 72h.</p>
+                    <a href="/envios">Ver condiciones y zonas de entrega</a>
+                </div>
+                <div class="info-box">
+                    <i class="fa fa-question-circle"></i>
+                    <h3>¿Tienes dudas?</h3>
+                    <p>Estamos para ayudarte. Contáctanos por chat, teléfono o email.</p>
+                    <a href="/contacto">Ver canales de contacto</a>
+                </div>
+        </div>
+        </main>
     <footer class="footer">
         <div class="footer-links">
             <div class="footer-links_columnas">

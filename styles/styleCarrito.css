@@ -5,6 +5,7 @@
     flex-direction: column;
     padding: 20px 15px;
     box-sizing: border-box;
+    background-color: #F9F9F9;
 }
 
 .page-carrito-titulo-wrapper{
@@ -27,30 +28,36 @@ aside {
     flex: 0 0 300px; /* Ancho fijo del aside */
 }
 
-/* Layout para pantallas grandes */
- @media (min-width: 768px) {
-    .main-content-carrito {
-        flex-direction: row;
-    }
-    section {
-        margin-right: 20px;
-    }
-    aside {
-        flex: 0 0 300px;
-    }
+.flex-row{
+    display: flex;
+    flex-direction: row;
 }
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Layout para pantallas pequeñas*/
 @media (max-width: 767px) {
-    .button-container {
+
+    .main-content-carrito {
+        flex-direction: column;
+        width: 767px;
+    }
+
+    .secondary-btn {
+        margin-top: 10px;
+    }
+
+    .main-content-carrito {
         flex-direction: column;
     }
 
-    .button-container button {
-        margin: 10px 0;
-    }
     .carrito-info {
         flex-direction: column;
+        width: 767px;
     }
 }
 
@@ -61,10 +68,19 @@ aside {
     margin-top: 20px;
 }
 
-.carrito-button-container button {
-    flex: 1;
-    margin: 0 10px;
+.carrito-button-container button{
+    width: 280px;
 }
+
+#form-pedido button {
+    width: 280px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+
 /*---*/
 
 .main-content-carrito-vacio {
@@ -109,4 +125,4 @@ aside {
             text-decoration: underline;
             font-weight: bold;
         }
-   
+
